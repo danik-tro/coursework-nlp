@@ -188,15 +188,15 @@ class Aggregator:
 
         print(sigmas_paragraph)
                 
-        # for v in sigmas_paragraph["S"]:
-        #     print(self.paragraphs[v].original)
+        for v in sigmas_paragraph["S"]:
+            print(self.paragraphs[v].original)
 
         df = pd.DataFrame(
             data=data,
         )
 
-        # df.to_excel("kr-1.xlsx",
-        #      sheet_name='Sheet_name_1')
+        df.to_excel("kr.xlsx",
+             sheet_name='Sheet_name_1')
 
 
 def load_data(path: str) -> list[str]:
